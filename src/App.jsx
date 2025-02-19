@@ -17,6 +17,11 @@ const theme = createTheme({
   palette: {
     mode: 'light',
   },
+  zIndex: {
+    appBar: 1200,
+    drawer: 1100,
+    bliberdi: 1,
+  }
 });
 
 const App = () => {
