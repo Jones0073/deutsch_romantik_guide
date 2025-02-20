@@ -42,7 +42,7 @@ const Background = () => {
       {/* Background image without inline opacity */}
       <img
         ref={imageRef}
-        src="/src/assets/der_wanderer.jpg" // Update with your actual image path
+        src="/der_wanderer.jpg"
         alt="Background"
         style={{
           width: '100%',

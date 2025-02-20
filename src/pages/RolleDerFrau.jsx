@@ -54,7 +54,7 @@ const InfoPage = () => {
         >
 
             <HeroSection
-                backgroundImage="/src/assets/FrauenRomantik.webp"
+                backgroundImage="/FrauenRomantik.webp"
                 title="Frauen in der Romantik"
                 content={`Ein weiterer Grund die Zeit der Romantik zu besuchen sind die Frauen der Romantik.
 

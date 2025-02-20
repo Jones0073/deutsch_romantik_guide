@@ -53,7 +53,7 @@ const Ueberblick = () => {
               mb: 4
           }}
       >
-      <ImageTextComponent imageUrl='src/assets/stadt.jpg' text="Haben Sie jemals davon geträumt, in die Vergangenheit zu reisen – berühmte Persönlichkeiten zu treffen, durch alte Städte zu schlendern und das Leben eines Adeligen zu genießen?" />
+      <ImageTextComponent imageUrl='/stadt.jpg' text="Haben Sie jemals davon geträumt, in die Vergangenheit zu reisen – berühmte Persönlichkeiten zu treffen, durch alte Städte zu schlendern und das Leben eines Adeligen zu genießen?" />
     </Container>
     </Box>
   );

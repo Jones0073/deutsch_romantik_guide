@@ -34,9 +34,9 @@ const Geschichte = () => {
             <Features scrollY={0} features={[
                 {icon: Clock, title: "Zeitreisen", desc: "Tauchen Sie ein in vergangene Epochen"},
                 {icon: Map, title: "Wanderungen", desc: "Erkunden Sie malerische Landschaften"},
-                {imagePath: "/src/assets/der_wanderer.jpg", title: "Geschichten", desc: "Entdecken Sie romantische Erzählungen"},
+                {imagePath: "/der_wanderer.jpg", title: "Geschichten", desc: "Entdecken Sie romantische Erzählungen"},
                 {
-                    imagePath: "/src/assets/der_wanderer.jpg",
+                    imagePath: "/der_wanderer.jpg",
                     title: "Kunstwerke",
                     desc: "Bewundern Sie zeitlose Meisterwerke hier steht jetzt irgendein lustiger und sehr sehr langer beispieltext wie dieser hier: Morgendämmerung in der Natur (8:00 Uhr)\n" +
                         "Ihr Tag beginnt in einem nebelverhangenen Wald bei Heidelberg, wo Sie mit einem jungen Romantiker die Stille der Natur genießen. Beim Spaziergang durch das taufrische Gras lauschen Sie seinen Gedichten, die die Schönheit und Mystik der Landschaft einfangen.\n" +

@@ -39,7 +39,7 @@ const Navbar = () => {
         setMobileOpen((prevState) => !prevState);
     };
 
-    const backgroundColor = theme.palette.mode === "light" ? "rgba(255, 255, 255, 0.9)" : "rgba(0, 0, 0, 0.9)";
+    const backgroundColor = theme.palette.mode === "light" ? "rgba(255, 255, 255, 0.95)" : "rgba(0, 0, 0, 0.95)";
 
     const drawer = (<Box onClick={handleDrawerToggle} sx={{textAlign: "center"}}>
             <List>
@@ -50,22 +50,24 @@ const Navbar = () => {
         </Box>);
 
     return (<>
-            <Box
-                ref={navRef}
-                sx={{
-                    width: "100%",
-                    position: "fixed",
-                    top: 45,
-                    left: 0,
-                    backdropFilter: "blur(10px)",
-                    backgroundColor: backgroundColor,
-                    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                    zIndex: theme.zIndex.appBar ? theme.zIndex.appBar : 1201,
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}
-            >
+        <Box
+            ref={navRef}
+            sx={{
+                width: "100%",
+                position: "relative",
+                top: 45,
+                left: 0,
+                WebkitBackdropFilter: "blur(10px)",
+                backdropFilter: "blur(10px)",
+                //backgroundColor: "rgba(255, 255, 255, 0.90)", //background
+                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                zIndex: theme.zIndex.appBar ? theme.zIndex.appBar : 1201,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+            }}
+            style={{backgroundColor: "rgba(255, 255, 255, 0.20)"}}
+        >
                 <Toolbar sx={{display: "flex", justifyContent: "space-between"}}>
                     {/* You can add a logo or title here */}
                     {isMobile ? (<IconButton

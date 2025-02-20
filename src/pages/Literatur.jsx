@@ -39,7 +39,7 @@ const InfoPage = () => {
         >
 
             <HeroSection
-                backgroundImage="/src/assets/Literatur.jpeg"
+                backgroundImage="/Literatur.jpeg"
                 title="Ein Tag in der Welt der Romantik"
 content={`<strong style="color: #8b4513">Ein literarischer Start in den Tag (08:00 Uhr)</strong>
 Am Morgen treffen wir uns in einem kleinen Park am Rande der Stadt. Ein junger
