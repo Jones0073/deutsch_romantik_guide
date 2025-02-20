@@ -18,9 +18,8 @@ const theme = createTheme({
     mode: 'light',
   },
   zIndex: {
-    appBar: 1200,
+    appBar: 1900,
     drawer: 1100,
-    bliberdi: 1,
   }
 });
 
@@ -29,7 +28,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       {/* The Navbar will appear on every page */}
       <Navbar />
-      <div style={{ marginTop: "100px" }}>
+      <div style={{ marginTop: "50px" }}>
       <Routes >
         {/* Define your routes */}
         <Route path="/uberblick" element={<Ueberblick />} />
