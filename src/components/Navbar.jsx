@@ -44,7 +44,7 @@ const Navbar = () => {
     const drawer = (<Box onClick={handleDrawerToggle} sx={{textAlign: "center"}}>
             <List>
                 {navItems.map((item, idx) => (<ListItem key={idx} component={Link} to={item.path}>
-                        <ListItemText primary={item.label}/>
+                        <ListItemText primary={item.label} sx={{ color: "white" }}/>
                     </ListItem>))}
             </List>
         </Box>);
@@ -84,7 +84,7 @@ const Navbar = () => {
                                     component={Link}
                                     to={item.path}
                                     sx={{
-                                        color: theme.palette.text.primary,
+                                        color: "white", //theme.palette.text.primary,
                                         fontWeight: "bold",
                                         textTransform: "none",
                                         padding: "8px 16px",
