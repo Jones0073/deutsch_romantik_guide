@@ -13,7 +13,7 @@ const DropdownButton = ({item}) => {
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
             sx={{
-                color: theme.palette.text.primary,
+                color: "white !important", //theme.palette.text.primary,
                 fontWeight: "bold",
                 textTransform: "none",
                 padding: "8px 16px",
@@ -22,6 +22,7 @@ const DropdownButton = ({item}) => {
                     transform: "scale(1.1)", backgroundColor: "transparent",
                 },
             }}
+                style={{color: "white !important"}}
         >
             {/* Clicking the title navigates to the main path */}
             <StyledLink to={path}>
