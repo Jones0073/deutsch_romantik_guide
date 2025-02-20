@@ -57,7 +57,7 @@ const FeatureCard = ({ icon: Icon, imagePath, title, desc, index }) => {
           justifyContent: 'center',
           minWidth: imagePath ? '100%' : '100%',
           minHeight: '100%',
-          backgroundColor: 'rgba(50, 70, 80, 0.1)'
+          backgroundColor: 'rgba(50, 70, 80, 0.4)'
         }}
         elevation={5}
       >
