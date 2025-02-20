@@ -84,7 +84,7 @@ const Navbar = () => {
                                     component={Link}
                                     to={item.path}
                                     sx={{
-                                        color: "white", //theme.palette.text.primary,
+                                        color: "white !important", //theme.palette.text.primary,
                                         fontWeight: "bold",
                                         textTransform: "none",
                                         padding: "8px 16px",
@@ -93,6 +93,8 @@ const Navbar = () => {
                                             transform: "scale(1.1)", backgroundColor: "transparent",
                                         },
                                     }}
+                                    style={{
+                                        color: "white"}}
                                 >
                                     {item.label}
                                 </Button>))}
