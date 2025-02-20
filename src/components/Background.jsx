@@ -14,15 +14,6 @@ const Background = () => {
       { opacity: 0 },
       { duration: 1.5, opacity: 1, ease: 'power1.out' }
     )
-
-      // Then start a subtle zoom effect that repeats indefinitely
-  //     .to(imageRef.current, {
-  //       duration: 5,
-  //       scale: 1.05,
-  //       repeat: -1,
-  //       yoyo: true,
-  //       ease: 'power1.inOut',
-      // });
   }, []);
 
   return (
