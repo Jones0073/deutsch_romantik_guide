@@ -1,0 +1,40 @@
+/* components/HeroSection/HeroSection.css */
+.hero-container {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #ff7535,#ffffff,#00c3ff);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.background-image {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.info-paper {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 10px rgba(43, 43, 43, 0.5);
+    border-radius: 10px;
+    color: white;
+    border: 1px solid rgb(138, 138, 138);
+}

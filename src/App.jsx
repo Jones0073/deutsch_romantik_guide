@@ -1,7 +1,6 @@
 // App.jsx
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Routes, Route, Navigate } from 'react-router-dom';import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Navbar from './components/Navbar';
 
 // Import your page components
@@ -11,6 +10,7 @@ import Geschichte from './pages/Geschichte';
 import RolleDerFrau from './pages/RolleDerFrau';
 import KunstMusik from './pages/KunstMusik';
 import DerRomantiker from './pages/DerRomantiker';
+import UberUns from "./pages/UberUns.jsx";
 
 // Create your theme (change mode to 'dark' if you want a dark theme)
 const theme = createTheme({
@@ -18,7 +18,7 @@ const theme = createTheme({
     mode: 'light',
   },
   zIndex: {
-    appBar: 1900,
+    appBar: 1999,
     drawer: 1100,
   }
 });
@@ -38,7 +38,9 @@ const App = () => {
         <Route path="/kunst-musik" element={<KunstMusik />} />
         <Route path="/der-romantiker" element={<DerRomantiker />} />
         {/* Optionally, set a default route */}
-        <Route path="/" element={<Ueberblick />} />
+        {/* Redirect root to /uberblick */}
+        <Route path="/" element={<Navigate to="/uberblick" replace />} />
+        <Route path="/uber-uns" element={<UberUns />} />
       </Routes>
         </div>
     </ThemeProvider>

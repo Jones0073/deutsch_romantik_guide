@@ -1,56 +1,80 @@
-import React, { useRef } from 'react';
-import { Box } from '@mui/material';
-import { Clock, Map } from 'lucide-react'; // Import the icons you need!
-import Features from '../components/Features.jsx';
-import Quote from '../components/Quote.jsx';
+// pages/InfoPage.jsx
+import React from 'react';
+import HeroSection from '../components/HeroSection/HeroSection';
+import ContentSection from '../components/ContentSection';
+import CTAButton from '../components/CTAButton';
+import {Box} from "@mui/material";
 
-const featuresData = [
-  { icon: Clock, title: 'Zeitreisen', desc: 'Tauchen Sie ein in vergangene Epochen' },
-  { icon: Map, title: 'Wanderungen', desc: 'Erkunden Sie malerische Landschaften' },
-  { imagePath: '/src/assets/der_wanderer.jpg', title: 'Geschichten', desc: 'Entdecken Sie romantische Erzählungen' },
-  {
-    imagePath: '/src/assets/der_wanderer.jpg',
-    title: 'Kunstwerke',
-    desc: `Bewundern Sie zeitlose Meisterwerke hier steht jetzt irgendein lustiger und sehr sehr langer beispieltext wie dieser hier:
-Morgendämmerung in der Natur (8:00 Uhr)
-Ihr Tag beginnt in einem nebelverhangenen Wald bei Heidelberg, wo Sie mit einem jungen Romantiker die Stille der Natur genießen. Beim Spaziergang durch das taufrische Gras lauschen Sie seinen Gedichten, die die Schönheit und Mystik der Landschaft einfangen.
-Sehnsucht nach Freiheit (11:00 Uhr)
-In der engen Altstadt von Heidelberg erzählt er Ihnen von seiner Melancholie und seiner Ablehnung der bürgerlichen Gesellschaft. Während Sie durch verwinkelte Gassen schlendern, philosophiert er über die Suche nach Wahrheit in der Kunst und Natur.
-Künstlerische Inspiration (15:00 Uhr)
-Am Nachmittag besuchen Sie eine kleine Weinstube, wo sich eine Gruppe von Malerinnen, Dichterinnen und Musiker*innen trifft. In ausgelassener, aber tiefgründiger Atmosphäre tauschen sie ihre Werke und Emotionen aus, während sanfte Musik den Raum erfüllt.
-Abendliche Reflexion am Fluss (19:00 Uhr)
-Zum Abschluss sitzen Sie mit Ihrem Gastgeber am Neckarufer, wo der Mond sich im Wasser spiegelt. Er spricht über die Vergänglichkeit des Moments, drückt Ihnen ein handgeschriebenes Gedicht in die Hand – eine Erinnerung an einen Tag voller Sehnsucht, Kunst und Naturverbundenheit.`
-  }
-];
-
-/**
- * Main component implementing a dark-themed vertical layout
- * matching the provided design screenshot
- */
-const Literatur = () => {
-  const ref = useRef(null);
-  return (
-    <Box
-      sx={{
-        position: 'relative',
-        top: 0,
-        left: 0,
-        width: '99vw',
-        minHeight: '100vh',
-        zIndex: -1,
-        overflow: 'hidden',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        '& > *': { // Targets all direct children
-          width: '100%',
+const InfoPage = () => {
+    const calistoItems = [
+        {
+            title: "Hier steht die überschrift 0001AA",
+            content: `Hihihehe`,
+            onClick: () => window.location.href = '/Callisto'
+        },
+        {
+            title: "Und hier die Überschrift 001AB:",
+            content: "bluberdiblube"
         }
-      }}
-    >
-      <Features scrollY={0} features={featuresData} />
-    </Box>
-  );
+    ];
+
+    return (
+        <Box
+            sx={{
+                position: 'relative',
+                top: 0,
+                left: 0,
+                width: '99vw',
+                minHeight: '100vh',
+                zIndex: -1,
+                overflow: 'hidden',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                '& > *': {
+                    width: '100%',
+                }
+            }}
+        >
+
+            <HeroSection
+                backgroundImage="/src/assets/Literatur.jpeg"
+                title="Ein Tag in der Welt der Romantik"
+content={`<strong style="color: #8b4513">Ein literarischer Start in den Tag (08:00 Uhr)</strong>
+Am Morgen treffen wir uns in einem kleinen Park am Rande der Stadt. Ein junger
+Literaturbegeisterter erzählt von den Ideen der Romantik – von Sehnsucht,
+Naturverbundenheit und der Kraft der Fantasie. Gemeinsam lesen wir ein paar Zeilen eines
+romantischen Dichters und sprechen darüber, was sie heute noch bedeuten könnten.
+
+<strong style="color: #8b4513">Auf den Spuren der Dichter (11:00 Uhr)</strong>
+In der Altstadt besuchen wir eine historische Bibliothek. Zwischen alten Büchern erfahren
+wir, wie Schriftsteller dieser Epoche lebten und arbeiteten. Beim Spaziergang durch die
+Straßen entdecken wir Orte, an denen sie sich aufhielten – vielleicht eine ehemalige
+Druckerei oder ein Café, in dem einst über Kunst und Literatur diskutiert wurde.
+
+<strong style="color: #8b4513">Schreiben und Nachdenken (15:00 Uhr)</strong>
+Am Nachmittag setzen wir uns in ein ruhiges Café oder an einen anderen gemütlichen Ort.
+Bei Tee oder Kaffee versuchen wir selbst, ein paar Zeilen im Stil der Romantik zu schreiben
+– inspiriert von unseren Eindrücken des Tages. Wer möchte, kann seine Gedanken mit der
+Gruppe teilen.
+
+<strong style="color: #8b4513">Der Tag klingt aus (19:00 Uhr)</strong>
+Zum Abschluss gehen wir gemeinsam an einen Ort, der zum Nachdenken einlädt – vielleicht
+ans Flussufer oder auf einen Hügel mit Blick über die Stadt. Wir lassen den Tag Revue
+passieren und sprechen darüber, was uns besonders bewegt hat. Jeder nimmt eine kleine
+Erinnerung mit: ein Gedicht, ein Zitat oder einfach einen neuen Blick auf die Welt der
+Romantik.`}
+            />
+
+{/*            <ContentSection
+                title="Irgendwas Über Die Rolle der Frau oder so"
+                items={calistoItems}
+            />*/}
+
+
+        </Box>
+    );
 };
 
-export default Literatur;
+export default InfoPage;

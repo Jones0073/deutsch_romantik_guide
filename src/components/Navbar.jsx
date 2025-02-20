@@ -60,7 +60,7 @@ const Navbar = () => {
                     backdropFilter: "blur(10px)",
                     backgroundColor: backgroundColor,
                     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                    zIndex: theme.zIndex.appBar,
+                    zIndex: theme.zIndex.appBar ? theme.zIndex.appBar : 1201,
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",

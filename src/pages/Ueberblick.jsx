@@ -13,20 +13,13 @@ const Ueberblick = () => {
   return (
     <Box
     sx={{
-        position: 'relative',
-        top: 100,
-        left: 0,
-        width: '100vw',
-        height: '100vh',
-        zIndex: -1,
-        overflow: 'hidden',
+        minWidth: '99vw',
+        minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        '& > *': {  // Dies zielt auf alle direkten Kinder-Elemente
-            width: '100%',
-        }
+
     }}
 >
       <Background />
@@ -36,10 +29,9 @@ const Ueberblick = () => {
           alignItems: 'center',
           justifyContent: 'center',
           flexDirection: 'column',
-          height: '100vh',
+          minHeight: '100vh',
           textAlign: 'center',
-          width: '100vh',
-          // translate: '50% 50%',
+          width: '100vw',
           px: 2,
         }}
       >
@@ -50,17 +42,16 @@ const Ueberblick = () => {
         <CTAButton/>
       </Container>
       <Container
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          // height: '100vh',
-          textAlign: 'center',
-          width: '100vh',
-          // translate: '50% 50%',
-          px: 2,
-        }}
+          sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexDirection: 'column',
+              textAlign: 'center',
+              width: '100%',
+              px: 2,
+              mb: 4
+          }}
       >
       <ImageTextComponent imageUrl='src/assets/stadt.jpg' text="Haben Sie jemals davon geträumt, in die Vergangenheit zu reisen – berühmte Persönlichkeiten zu treffen, durch alte Städte zu schlendern und das Leben eines Adeligen zu genießen?" />
     </Container>
