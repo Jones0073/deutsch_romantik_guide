@@ -29,7 +29,8 @@ const App = () => {
     <ThemeProvider theme={theme}>
       {/* The Navbar will appear on every page */}
       <Navbar />
-      <Routes>
+      <div style={{ marginTop: "100px" }}>
+      <Routes >
         {/* Define your routes */}
         <Route path="/uberblick" element={<Ueberblick />} />
         <Route path="/literatur" element={<Literatur />} />
@@ -40,6 +41,7 @@ const App = () => {
         {/* Optionally, set a default route */}
         <Route path="/" element={<Ueberblick />} />
       </Routes>
+        </div>
     </ThemeProvider>
   );
 };
