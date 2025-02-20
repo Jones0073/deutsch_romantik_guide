@@ -1,6 +1,8 @@
 import React, {useRef} from 'react';
 import {Box} from "@mui/material";
 import {Clock, Map, Book, Camera} from 'lucide-react';
+import HeroSection from '../components/HeroSection/HeroSection';
+
 
 import Features from "../components/Features.jsx";
 import Quote from "../components/Quote.jsx";
@@ -31,6 +33,33 @@ const Geschichte = () => {
                 }
             }}
         >
+            <HeroSection
+                                backgroundImage="src/assets/NapoleonBonapart.webp"
+                                title="Hauptaspekte der politischen Entwicklungen in der Romantik"
+                                content={`
+<strong style="color: #8b4513">Einfluss der Französischen Revolution und Napoleon</strong>
+  - Verbreitung der Ideale Freiheit, Gleichheit, Brüderlichkeit.
+  - Napoleons Feldzüge führten zur Auflösung alter feudaler Strukturen.
+  - Langfristige Impulse für das Entstehen moderner Staatssysteme.
+
+  <strong style="color: #8b4513">Wiener Kongress und die Restauration</strong>
+Wiener Kongress und die Restauration:
+  - Ziel: Wiederherstellung der politischen Ordnung nach den Napoleonischen Kriegen.
+  - Maßnahmen: Konservative Neuordnung und Sicherung alter Machtstrukturen.
+  - Auswirkungen: Einführung restriktiver politischer Reaktionen und Zensur, die ein Klima der politischen Kontrolle schufen.
+
+  <strong style="color: #8b4513">Aufstieg des Nationalismus und liberale Bewegungen</strong>
+  - Entstehung eines gesteigerten Nationalbewusstseins in vielen europäischen Regionen.
+  - Dichter, Künstler und Intellektuelle idealisierten Volkskultur, Legenden und gemeinsame Geschichte.
+  - Diese kulturelle Dynamik unterstützte die liberalen und revolutionären Bestrebungen, die in den Revolutionen von 1848 gipfelten.
+
+  <strong style="color: #8b4513">Romantische Gegenbewegung zur Aufklärung</strong>
+  - Ablehnung der rein rationalen und utilitaristischen Ansätze der Aufklärung.
+  - Betonung von Individualität, Mystik und der Sehnsucht nach einer idealisierten Vergangenheit.
+  - Kritische Haltung gegenüber autoritären und starren politischen Ordnungen.
+
+            `}
+                            />
             <Features scrollY={0} features={[
                 {icon: Clock, title: "Zeitreisen", desc: "Tauchen Sie ein in vergangene Epochen"},
                 {icon: Map, title: "Wanderungen", desc: "Erkunden Sie malerische Landschaften"},

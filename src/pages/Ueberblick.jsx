@@ -54,7 +54,21 @@ const Ueberblick = () => {
           }}
       >
       <ImageTextComponent imageUrl='/stadt.jpg' text="Haben Sie jemals davon geträumt, in die Vergangenheit zu reisen – berühmte Persönlichkeiten zu treffen, durch alte Städte zu schlendern und das Leben eines Adeligen zu genießen?" />
-    </Container>
+      <Typography variant="h4" height='1vh' margin='10vh'>
+          Das erleben Sie
+        </Typography>
+        <ImageTextComponent 
+  imageUrl='src/assets/kultur.jpg' 
+  text={"• kulturgeschichtliche Epoche von Ende des 18. Jahrhunderts bis weit ins 19. Jahrhundert\n• vor allem Äußerung in Gebieten der bildenden Kunst, der Literatur und der Musik\n• aber auch Einfluss auf Geschichte, Theologie, Philosophie und Naturwissenschaften und Medizin"} 
+/>
+<Typography variant="h4" height='4vh' margin='6vh'>
+          Geschichtlich
+        </Typography>
+<ImageTextComponent 
+  imageUrl='src/assets/Jahreszeiten.jpg' 
+  text={"• Frühromantik (ab 1740/50) entgegen der gesellschaftlichen Ordnung der Aufklärung; bis zur französischen Revolution\n• Hochromantik (ab 1804) bis zum Beginn der Herrschaft Napoleons über Europa\n• Spätromantik (1815-1830/1835) nach den Befreiungskriegen und dem Wiener Kongress"} 
+/>
+      </Container>
     </Box>
   );
 };
